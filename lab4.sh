@@ -15,7 +15,9 @@ make
 make install 
 rpm -qa > task3.log
 yum deplist gcc > task4_1.log
-rpm -q --whatrequires libgcc > task4_2.log
+
+rpm -q --whatrequires libgcc > task4_2.log    ----- apt
+
 mkdir localrepo
 cp /mnt/share/checkinstall-1.6.2-3.el6.1.x86_64.rpm localrepo/checkinstall-1.6.2-3.el6.1.x86_64.rpm 
 cd localrepo
